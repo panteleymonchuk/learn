@@ -1,5 +1,80 @@
 'use strict';
 
+/*
+* List of plugins:
+* gulp
+* gulp-concat-css
+* gulp-minify-css (gulp-clean-css)
+* gulp-notify
+* gulp-rename
+* gulp-less
+* gulp-autoprefixer
+* gulp-livereload
+* gulp- connect : локальный сервер
+* gulp-watch
+* gulp-sass
+* gulp-uglify (удаляет не используемый js)
+* gulp-uncss : удаляет не используемый код
+* gulp-rev-append : проверка файла на кэширование "app/style.css?rev=@@hash". После выполнения хэш изменяется, если изменен исходный файл
+* gulp-rev : изменение названия файла с учетом хэша
+* gulp-rev-collector : замена имени подключаемого файла
+* gulp-rev-outdater : оставляет на диске последние несколько версий файлов. Требует доп.модулей
+* gulp wiredep : по синтаксису прописывает автоматически пути к модулям, указанным в bower
+* gulp-useref : отправка файлов на сервер
+* gulp-sftp : отправка файлов на сервер
+* gulp-clean : очищает полностью папку
+* browser-sync
+* */
+
+
+/*
+* Main commands:
+*
+* Install gulp global
+* npm install --global gulp || npm install --g gulp
+* ​
+* If you've previously installed gulp globally, before following these instructions run:
+* npm rm --global gulp
+*
+* ​Init npm. Created package.json
+* npm init
+*
+* Open plugin homepage
+* ​npm home gulp-rev-append
+*
+* Запуск локалього сервера с целью просмотра сайтра на мобильном устройстве
+* browser-sync start --proxy "http://australianwritings.com.local/"
+*
+* --files=essay/sites/bestessays.com/web/
+*
+* ​gulp.src("/") - откуда брать файлы или исходные данные
+* gulp.dest("/"); - папка результата
+* .pipe() : обьединение комманд
+* gulp.watch("src", ['otherTask', 'otherTask']
+* npm home gulp-rev-append : открыть домашнюю страницу плагина
+* rev.manifest() : создает json со старым и новым названием
+* */
+
+
+/*
+* BOWER
+*
+* Init bower package:
+* bower init
+*
+* Search libs:
+* bower search jquery || bower s jquery
+*
+* Install libs:
+* bower install jquery#1.8 || bower i jqury#1.8 || bower install jquery#1.8 --save || bower install jquery#1.8 -s
+*
+* Удалить библиотеку или пакет:
+* bower uninstall jquery#1.8
+*
+* ​Создать файл .bowerrc в котором указать директорию, в которую будет указан путь для скачивания пакетов
+* {"directory" : "app/assets"}
+* */
+
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');

@@ -1,1 +1,1 @@
-#learn
+In this repository are sample code written during the training.

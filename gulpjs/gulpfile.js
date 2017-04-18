@@ -1,41 +1,4 @@
 'use strict';
-
-/*
-* Main commands:
-
-*
-
-*
-*
-*
-* ​gulp.src("/") - откуда брать файлы или исходные данные
-* gulp.dest("/"); - папка результата
-* .pipe() : обьединение комманд
-* gulp.watch("src", ['otherTask', 'otherTask']
-* npm home gulp-rev-append : открыть домашнюю страницу плагина
-* rev.manifest() : создает json со старым и новым названием
-* */
-
-
-/*
-* BOWER
-*
-* Init bower package:
-* bower init
-*
-* Search libs:
-* bower search jquery || bower s jquery
-*
-* Install libs:
-* bower install jquery#1.8 || bower i jqury#1.8 || bower install jquery#1.8 --save || bower install jquery#1.8 -s
-*
-* Удалить библиотеку или пакет:
-* bower uninstall jquery#1.8
-*
-* ​Создать файл .bowerrc в котором указать директорию, в которую будет указан путь для скачивания пакетов
-* {"directory" : "app/assets"}
-* */
-
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');

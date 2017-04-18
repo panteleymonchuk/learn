@@ -1,33 +1,6 @@
 'use strict';
 
 /*
-* List of plugins:
-* gulp
-* gulp-concat-css
-* gulp-minify-css (gulp-clean-css)
-* gulp-notify
-* gulp-rename
-* gulp-less
-* gulp-autoprefixer
-* gulp-livereload
-* gulp- connect : локальный сервер
-* gulp-watch
-* gulp-sass
-* gulp-uglify (удаляет не используемый js)
-* gulp-uncss : удаляет не используемый код
-* gulp-rev-append : проверка файла на кэширование "app/style.css?rev=@@hash". После выполнения хэш изменяется, если изменен исходный файл
-* gulp-rev : изменение названия файла с учетом хэша
-* gulp-rev-collector : замена имени подключаемого файла
-* gulp-rev-outdater : оставляет на диске последние несколько версий файлов. Требует доп.модулей
-* gulp wiredep : по синтаксису прописывает автоматически пути к модулям, указанным в bower
-* gulp-useref : отправка файлов на сервер
-* gulp-sftp : отправка файлов на сервер
-* gulp-clean : очищает полностью папку
-* browser-sync
-* */
-
-
-/*
 * Main commands:
 *
 * Install gulp global

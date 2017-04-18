@@ -2,23 +2,11 @@
 
 /*
 * Main commands:
+
 *
-* Install gulp global
-* npm install --global gulp || npm install --g gulp
-* ​
-* If you've previously installed gulp globally, before following these instructions run:
-* npm rm --global gulp
+
 *
-* ​Init npm. Created package.json
-* npm init
 *
-* Open plugin homepage
-* ​npm home gulp-rev-append
-*
-* Запуск локалього сервера с целью просмотра сайтра на мобильном устройстве
-* browser-sync start --proxy "http://australianwritings.com.local/"
-*
-* --files=essay/sites/bestessays.com/web/
 *
 * ​gulp.src("/") - откуда брать файлы или исходные данные
 * gulp.dest("/"); - папка результата

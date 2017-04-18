@@ -25,5 +25,28 @@
 * browser-sync
 
 
-## Основные комманды:
-* Install gulp global `npm install --global gulp` `npm install --g gulp`
+## Основные команды:
+* Install gulp global `npm install --global gulp` `npm install --g gulp`. If you've previously installed gulp globally, before following these instructions run: `npm rm --global gulp`
+* ​Init npm. Created package.json `npm init`. If package.json already exist - all packages from the file are downloaded
+* Open plugin homepage `​npm home gulp-rev-append`
+* Запуск локалього сервера с целью просмотра сайтра на мобильном устройстве `browser-sync start --proxy "http://australianwritings.com.local/"`. Возможно добавление `--files=essay/sites/bestessays.com/web/`
+
+Создание задачи
+```javascript
+gulp.task('sass', function () {
+    return gulp.src('app/scss/**/*.scss')
+        .pipe( sass().on('error', sass.logError) )
+        .pipe( autoprefixer( {browsers: ['last 2 versions'], cascade: false} ) )
+        .pipe( cleanCSS({compatibility: 'ie8'}) )
+        .pipe( rename('styles.css') )
+        .pipe( gulp.dest('dist/css/') )
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+});
+```
+
+Зависимости
+```javascript
+gulp.task('default', ['watch']);
+```

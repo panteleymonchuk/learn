@@ -1,4 +1,4 @@
-#Guide to gulp.js
+# Guide to gulp.js
 
 ## Список плагинов gulp:
 * `gulp`

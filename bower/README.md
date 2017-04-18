@@ -1,4 +1,4 @@
-#Guide to bower
+# Guide to bower
 
 ## Основные команды:
 * `bower init` Init bower package

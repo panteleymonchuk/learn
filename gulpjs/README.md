@@ -13,7 +13,6 @@
 * gulp-watch
 * gulp-sass
 * gulp-uglify _удаляет не используемый js_
-* 
 * gulp-uncss _удаляет не используемый код_
 * gulp-rev-append _проверка файла на кэширование `app/style.css?rev=@@hash`. После выполнения хэш изменяется, если изменен исходный файл_
 * gulp-rev _изменение названия файла с учетом хэша_
@@ -26,3 +25,5 @@
 * browser-sync
 
 
+## Основные комманды:
+* Install gulp global `npm install --global gulp` `npm install --g gulp`

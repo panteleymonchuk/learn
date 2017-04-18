@@ -1,0 +1,3 @@
+function firstJS () {
+    return false;
+}

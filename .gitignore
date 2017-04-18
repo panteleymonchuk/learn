@@ -1,0 +1,6 @@
+/**/.git/
+.idea/
+/**/.idea/
+/**/node_modules/
+/**/.bin/
+/**/!source/

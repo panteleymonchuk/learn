@@ -1,0 +1,22 @@
+{
+  "name": "project-raki-2",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Eugene.Panteleymonch <eugene.panteleymonchuk@devellar.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/panteleymonchuk/learn",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "angularjs#1.6.3",
+    "reset-css": "^2.2.0"
+  }
+}

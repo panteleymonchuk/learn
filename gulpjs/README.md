@@ -30,6 +30,7 @@
 * ​Init npm. Created package.json `npm init`. If package.json already exist - all packages from the file are downloaded
 * Open plugin homepage `​npm home gulp-rev-append`
 * Запуск локалього сервера с целью просмотра сайтра на мобильном устройстве `browser-sync start --proxy "http://australianwritings.com.local/"`. Возможно добавление `--files=essay/sites/bestessays.com/web/`
+* Посмотреть плагины, установленные глобально `npm list -g --depth=0"`
 
 Создание задачи
 ```javascript

@@ -6,23 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_component_1 = require("./app.component");
-var hello_component_1 = require("./hello.component");
-var AppModule = (function () {
-    function AppModule() {
+var HelloComponent = (function () {
+    function HelloComponent() {
+        this.title = 'hello';
     }
-    return AppModule;
+    return HelloComponent;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [
-            app_component_1.AppComponent,
-            hello_component_1.HelloComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
+HelloComponent = __decorate([
+    core_1.Component({
+        selector: 'hello',
+        template: "<h1>{{title}}</h1>",
     })
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], HelloComponent);
+exports.HelloComponent = HelloComponent;
+//# sourceMappingURL=hello.component.js.map

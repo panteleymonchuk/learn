@@ -1,3 +1,0 @@
-function testSecond () {
-    return false;
-}

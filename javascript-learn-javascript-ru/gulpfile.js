@@ -21,7 +21,11 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('watch', ['browserSync'], function () {
-    gulp.watch(['app/**/*.js', 'app/index.html'], ['watch-files']);
+    gulp.watch([
+        'app/**/*.js',
+        'app/index.html'
+        ],
+        ['watch-files']);
 });
 
 gulp.task('default', ['watch']);

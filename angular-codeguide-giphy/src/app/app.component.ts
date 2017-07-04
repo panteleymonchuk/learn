@@ -13,4 +13,8 @@ function myFunc(msg: string): string {
 })
 export class AppComponent {
   title = 'app works!';
+
+  performSearch(): void {
+    alert('button click');
+  }
 }

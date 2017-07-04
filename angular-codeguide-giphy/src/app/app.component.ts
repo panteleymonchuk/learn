@@ -9,12 +9,16 @@ function myFunc(msg: string): string {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // "styles": [
+  //   "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+  //   "styles.css"
+  // ],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'app works!';
 
-  performSearch(): void {
-    alert('button click');
+  performSearch(searchTerm: HTMLInputElement): void {
+    alert('button click' + `${searchTerm.value}`);
   }
 }

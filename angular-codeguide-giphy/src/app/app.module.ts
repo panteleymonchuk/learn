@@ -3,6 +3,8 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 import {AppComponent} from './app.component';
 import {Awesome} from './awesome.component';
 import {PhoneList} from './phone-list/phone-list.component';
@@ -14,6 +16,7 @@ import {PhoneList} from './phone-list/phone-list.component';
         PhoneList
     ],
     imports: [
+        BsDropdownModule.forRoot(),
         BrowserModule,
         FormsModule,
         HttpModule

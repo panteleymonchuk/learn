@@ -1,23 +1,45 @@
 <h1>
-    {{title}}
-    Welcome to GiphySearch
-    <div>
-        <input #searchterm="" name="title">
-        <button (click)="performSearch(searchterm)">Search</button>
-    </div>
+    <!--{{title}}-->
+    <!--Welcome to GiphySearch-->
+
     <!--<awesome></awesome>-->
     <!--<phone-list></phone-list>-->
 </h1>
-<div class="btn-group" dropdown>
-    <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-        Button dropdown <span class="caret"></span>
-    </button>
-    <ul *dropdownMenu class="dropdown-menu" role="menu">
-        <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
-        <li class="divider dropdown-divider"></li>
-        <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
-        </li>
-    </ul>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="col-lg-6 text-center">
+                <span>
+                    <div class="input-group">
+                    <input #searchterm type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button" (click)="performSearch(searchterm)" name="title">Go!</button>
+                    </span>
+                </div>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-1">
+            <div *ngFor="let hero of giphes">
+                <img src='{{hero.user.banner_url}}' alt="">
+                {{hero.embed_url}}
+            </div>
+        </div>
+    </div>
 </div>
+<!--<div class="btn-group" dropdown>-->
+<!--<button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">-->
+<!--Button dropdown <span class="caret"></span>-->
+<!--</button>-->
+<!--<ul *dropdownMenu class="dropdown-menu" role="menu">-->
+<!--<li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>-->
+<!--<li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--<li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--<li class="divider dropdown-divider"></li>-->
+<!--<li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->

@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    link
 </head>
 <body>
 
 
 <script src="js/7-OOP-functional-style.js"></script>
+
+<script>
+    // in: 2 7 3 2 1 7 4 6 6 2 1
+    // out :2 2 2 4 6 6 7 7 3 1 1
+
+    var arr = [2, 7, 3, 2, 1, 7, 4, 6, 6, 2, 1];
+    var tempEven = [], tempOdd;
+    for (var i=0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            tempEven = tempEven.push(arr[i]);
+
+        }
+        for (var j = i + 1; j < arr.length; j++) {
+            if (arr[i] % 2 == 0 && arr[j] % 2 == 0) {
+                var x = arr[i];
+                arr[i] = arr[j];
+                arr[j] = x;
+            }
+        }
+
+        // for(int j = i + 1; j<size; j++) {
+        // if (MyArray[i]%2 && MyArray[j]%2){
+        // int x =  MyArray[i];
+        // MyArray[i] =  MyArray[j];
+        // MyArray[j] =  x;
+        // }
+        // }
+    }
+
+    function sIncrease(i, ii) { // По возрастанию
+        if (i > ii)
+            return 1;
+        else if (i < ii)
+            return -1;
+        else
+            return 0;
+    }
+
+    function sDecrease(i, ii) { // По убыванию
+        if (i > ii)
+            return -1;
+        else if (i < ii)
+            return 1;
+        else
+            return 0;
+    }
+
+
+
+//    console.log(arr);
+</script>
 </body>
 </html>

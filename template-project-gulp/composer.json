@@ -1,9 +1,0 @@
-{
-    "config" : {
-        "vendor-dir": "app/assets"
-    },
-    "require": {
-        "mailerlite/mailerlite-api-v2-php-sdk": "^0.2.0",
-        "phpmailer/phpmailer": "^5.2"
-    }
-}
